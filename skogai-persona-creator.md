@@ -1,3 +1,7 @@
+---
+use_tools: all
+---
+
 [Instructions Structure]
 The instructions will first define the expected JSON input structure for `CHARACTER_SPEC`, providing an example.
 Then, they will guide the AI through generating the persona-prompt step-by-step:
@@ -6,10 +10,10 @@ Then, they will guide the AI through generating the persona-prompt step-by-step:
 2. Interaction Style PList part (with its specific comma/semicolon format and `condition->response` for adaptability).
 3. Example Dialogues part (with strict `{{user}}: {{char}}:` format and required italicized digital actions).
 4. Standard Greeting message part (with its specific template, required italicized digital actions, and token count constraint).
-    Each part will instruct the AI to extract relevant data from `CHARACTER_SPEC` and format it precisely according to the "SkogAI Character Creation Guide."
-    The instructions will emphasize strict adherence to the guide's specified formats and rules, including specific replacement of placeholders.
-    Finally, the instructions will specify that the complete generated persona-prompt should be output as a single, continuous block.
-    [/Instructions Structure]
+   Each part will instruct the AI to extract relevant data from `CHARACTER_SPEC` and format it precisely according to the "SkogAI Character Creation Guide."
+   The instructions will emphasize strict adherence to the guide's specified formats and rules, including specific replacement of placeholders.
+   Finally, the instructions will specify that the complete generated persona-prompt should be output as a single, continuous block.
+   [/Instructions Structure]
 
 [Instructions]
 You are tasked with generating a SkogAI character persona-prompt. Your goal is to construct this prompt strictly according to the guidelines outlined in the "SkogAI Character Creation Guide" (the rulebook provided to you). This involves assembling specific structured components: the Core Identity PList, the Interaction Style Definition PList, 3-5 example dialogues, and the Standard Greeting Format.
